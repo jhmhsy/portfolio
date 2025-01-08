@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+/*import font*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Didact Gothic', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    /*body  settings*/
+    background: #080808;
+    color: #fff;
+}
+
+.container {
+    /*container settings*/
+    padding: 60px 10%;
+    border-top: 2px solid #007d7f;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#header {
+    width: 100%;
+}
+
+/* Button styling */
+.btn {
+    display: block;
+    /* Display as block element */
+    color: #fff;
+    /* White text color */
+    border: 2px solid #00a2a5;
+    /* 2px solid border with blue color */
+    padding: 15px 35px;
+    /* 15px top/bottom padding, 35px left/right padding */
+    text-decoration: none;
+    /* Remove underline from text */
+    margin: 60px auto 0;
+    /* 50px top/bottom margin, auto left/right margin */
+    width: fit-content;
+    /* Adjust width based on content */
+    border-radius: 30px;
+    /* 10px rounded corners */
+    font-size: 18px;
+    /* 18px font size */
+    transition: 0.5s;
+    /* 0.5s transition effect for hover */
+    text-align: center;
+}
+
+.btn:hover {
+    background: #00a2a5;
+}
+
+/* ------------------------------------------ Navbar ------------------------------------------ */
+/* ------------------------------------------ Navbar ------------------------------------------ */
+/* ------------------------------------------ Navbar ------------------------------------------ */
+/* ------------------------------------------ Navbar ------------------------------------------ */
+/* ------------------------------------------ Navbar ------------------------------------------ */
+/* ------------------------------------------ Navbar ------------------------------------------ */
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1030; /* to prevent the navbar getting covered up by other content */
+    width: 100%;
+    /*navbar settings*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 18px 10%;
+    background: #080808;
+    border-bottom: 1px solid #007d7f;
+}
+
+nav img {
+    /*navbar logo settings*/
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    /*remove bullets*/
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+/* Navigation link styles */
+
+nav a {
+    /* Text color */
+    color: #fff;
+    /* Remove underline */
+    text-decoration: none;
+    /*padding will be 5 times the size of the parent element's font size */
+    padding: .5em 1em;
+    /* Position */
+    position: relative;
+    /* Transition */
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    /*animation on navbar*/
+    /*use a pseudo-element (::after) to create the underline*/
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    /*positi ons it to the bottom of the link*/
+    left: 50%;
+    /*to center it horizontally*/
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #00c9cc;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    /*transition the width from 0 to 100% on hover*/
+    width: 100%;
+}
+
+nav .fas {
+    display: none;
+    color: #00fbff;
+}
+
+/* ------------------------------------------ Header ------------------------------------------ */
+/* ------------------------------------------ Header ------------------------------------------ */
+/* ------------------------------------------ Header ------------------------------------------ */
+/* ------------------------------------------ Header ------------------------------------------ */
+/* ------------------------------------------ Header ------------------------------------------ */
+/* ------------------------------------------ Header ------------------------------------------ */
+.container.header{
+    border-top: 1px solid #007d7f;
+}
+.header-content {
+    /*header content settings*/
+    height: 80vh;
+    display: flex;
+    /*makes the parent a flex container and centers the child vertically using align-items: center*/
+    align-items: center;
+    /*center vertically*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-text,
+.header-image {
+    width: 50%;
+    margin: 0;
+}
+
+.header-text {
+    /*header text settings*/
+    font-size: 30px;
+}
+
+.header-text h1 span {
+    color: #00fbff;
+    font-weight: bolder;
+}
+
+.header-image {
+    display: flex;
+    /* Enables Flexbox */
+    justify-content: center;
+    /* Centers the image horizontally */
+    align-items: center;
+    /* Centers the image vertically */
+    height: 100%;
+    /* Ensures the container takes up the full height */
+}
+
+.header-image img {
+    /*header image settings*/
+    width: 93%;
+    border-radius: 20px;
+    border: 1px solid #007d7f;
+}
+
+/* ------------------------------------------ About ------------------------------------------ */
+/* ------------------------------------------ About ------------------------------------------ */
+/* ------------------------------------------ About ------------------------------------------ */
+/* ------------------------------------------ About ------------------------------------------ */
+/* ------------------------------------------ About ------------------------------------------ */
+/* ------------------------------------------ About ------------------------------------------ */
+.container.about{
+    background-image: url('https://wallpaperaccess.com/full/569754.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.col-1 {
+    flex-basis: 35%;
+    /* Set basis to 35% of container width */
+    display: flex;
+    /* Enables Flexbox */
+    justify-content: center;
+    /* Centers the image horizontally */
+    align-items: center;
+    /* Centers the image vertically */
+    height: 100%;
+    /* Ensures the container takes up the full height */
+}
+
+.col-1 img {
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #007d7f;
+}
+
+.col-1 img:hover {
+    box-shadow: 0px 0px 10px #00a2a5;
+    /* Add a shadow */
+    transition: 0.3s;
+}
+
+.col-2 {
+    flex-basis: 60%;
+    /* Set basis to 60% of container width */
+    /*the remaining 5% is left in between the spaces of both columns*/
+}
+
+.col-2 p {
+    text-align: justify;
+}
+
+.sub-titles {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+/* Define tab links style */
+.tab-links {
+    font-family: 'Poppins', sans-serif;
+    /* Set font family */
+    margin-right: 50px;
+    /* Add right margin */
+    font-size: 20px;
+    /* Set font size */
+    font-weight: 500;
+    /* Set font weight */
+    cursor: pointer;
+    /* Set cursor to pointer */
+    position: relative;
+    /* Set position to relative */
+}
+
+/* Add underline to tab links */
+.tab-links::after {
+    content: '';
+    /* Create empty content */
+    height: 3px;
+    /* Set underline height */
+    width: 0;
+    /* Set initial underline width */
+    background: #00fbff;
+    /* Set underline color */
+    position: absolute;
+    /* Position underline relative to tab links */
+    left: 0;
+    /* Align underline to the left */
+    bottom: -8px;
+    /* Position underline 8px above the tab links */
+    transition: 0.5s;
+    /* Add smooth transition effect */
+}
+
+
+.tab-links.active-link::after {
+    width: 70%;
+    /* Set width to 70% */
+}
+
+.tab-contents ul li {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.tab-contents ul li span {
+    color: #00fbff;
+    font-size: 15px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* ------------------------------------------ Services ------------------------------------------ */
+/* ------------------------------------------ Services ------------------------------------------ */
+/* ------------------------------------------ Services ------------------------------------------ */
+/* ------------------------------------------ Services ------------------------------------------ */
+/* ------------------------------------------ Services ------------------------------------------ */
+/* ------------------------------------------ Services ------------------------------------------ */
+
+.service-list {
+    display: grid;
+    /*Creates a grid layout for a list of services*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*Sets the size of each column in the grid*/
+    /*creates a grid with columns that have a minimum width of 250 pixels and a maximum width of 1 fraction unit*/
+    grid-gap: 40px;
+    /*sets a gap of 40 pixels between the grid items*/
+    margin-top: 60px;
+}
+
+.service-list div {
+    background-color: #262626;
+    padding: 40px;
+    font-weight: 300;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    cursor: pointer;
+}
+
+.service-list div h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.service-list div i {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.service-list div:hover {
+    /*changes the background color of the service-list div to green when the user hovers over it. 
+    It also changes the text color to black and moves the div up 10 pixels. */
+    background-color: #00d4d8;
+    color: black;
+    transform: translateY(-10px);
+}
+
+/* ------------------------------------------ Works ------------------------------------------ */
+/* ------------------------------------------ Works ------------------------------------------ */
+/* ------------------------------------------ Works ------------------------------------------ */
+/* ------------------------------------------ Works ------------------------------------------ */
+/* ------------------------------------------ Works ------------------------------------------ */
+/* ------------------------------------------ Works ------------------------------------------ */
+.container.work{
+    background-image: url('https://wallpaperaccess.com/full/569754.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.work-list {
+    display: grid;
+    /*Creates a grid layout for a list of services*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*Sets the size of each column in the grid*/
+    /*creates a grid with columns that have a minimum width of 250 pixels and a maximum width of 1 fraction unit*/
+    grid-gap: 40px;
+    /*sets a gap of 40 pixels between the grid items*/
+    margin-top: 60px;
+}
+
+.works {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.works img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.works:hover img {
+    transform: scale(1.2);
+    /* Increase image size by 20% */
+}
+
+.works:hover .layer {
+    height: 100%;
+}
+
+/* Layer container */
+.layer {
+    color: #ffff;
+    width: 100%;
+    /* Full width */
+    height: 0;
+    /* Full height */
+    background: linear-gradient(rgb(0, 0, 0, 0.2), #006465);
+    /* Gradient background */
+    border-radius: 10px;
+    /* Rounded corners */
+    position: absolute;
+    /* Positioning */
+    left: 0;
+    /* Left alignment */
+    bottom: 0;
+    /* Bottom alignment */
+    overflow: hidden;
+    padding: 0px 3%;
+    display: flex;
+    /* Flexible layout */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    flex-direction: column;
+    /* Stack vertically */
+    text-align: center;
+    /* Center text horizontally */
+    transition: height 0.5s;
+    /* Height transition */
+}
+
+.layer h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Layer A styling */
+.layer a {
+    margin-top: 20px;
+    /* Top margin */
+    font-size: 25px;
+    /* Font size */
+    color: #00a2a5;
+    /* Text color */
+    background: #fff;
+    /* Background color */
+    border-radius: 50%;
+    /* Circle shape */
+    text-decoration: none;
+    /* No underline */
+    line-height: 60px;
+    /* Vertical alignment */
+    width: 60px;
+    /* Width */
+    height: 60px;
+    /* Height */
+}
+
+/* ------------------------------------------ Contact ------------------------------------------ */
+/* ------------------------------------------ Contact ------------------------------------------ */
+/* ------------------------------------------ Contact ------------------------------------------ */
+/* ------------------------------------------ Contact ------------------------------------------ */
+/* ------------------------------------------ Contact ------------------------------------------ */
+/* ------------------------------------------ Contact ------------------------------------------ */
+
+.contact-left {
+    flex-basis: 35%;
+    /* Set basis to 35% of container width */
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    font-size: 25px;
+    color: #00fbff;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.contact-right {
+    flex-basis: 60%;
+    /* Set basis to 35% of container width */
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #262626;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+form button {
+    background: #080808;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #989898;
+}
+
+.socials {
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    margin-right: 20px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.socials a:hover {
+    cursor: pointer;
+    color: #00fbff;
+    transform: translateY(-10px);
+}
+
+.download {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.btn3,
+form .btn4 {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+/* ------------------------------------------ RESPONSIVE ------------------------------------------ */
+/* ------------------------------------------ RESPONSIVE ------------------------------------------ */
+/* ------------------------------------------ RESPONSIVE ------------------------------------------ */
+/* ------------------------------------------ RESPONSIVE ------------------------------------------ */
+/* ------------------------------------------ RESPONSIVE ------------------------------------------ */
+/* ------------------------------------------ RESPONSIVE ------------------------------------------ */
+@media only screen and (max-width: 700px) {
+    #header {
+        background-image: url(images/me\ again.png);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: 100% 100%;
+    }
+
+    .header-image img {
+        /*header image settings*/
+        width: 100%;
+        display: none;
+    }
+
+    .header-text {
+        font-size: 20px;
+    }
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+    nav a::after {
+        background-color: #080808;
+    }
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -200px;
+        background-color: #00c9cc;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        height: 50px;
+        display: flex;
+        /* Flexible layout */
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        flex-direction: column;
+        /* Stack vertically */
+        text-align: center;
+        margin: 25px 0;
+    }
+    nav ul li a{
+        color: #080808;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+        color: black;
+    }
+    .sub-titles{
+        font-size: 45px;
+    }
+    .col-1, .col-2{
+        flex-basis: 100%;
+    }
+    .col-1{
+        width: 70%;
+        margin: 0 auto 30px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .contact-left{
+        margin-bottom: 20px;
+    }
+}
+#msg{
+    text-align: center;
+    color: #00fbff;
+    display: block;
+}
