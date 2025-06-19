@@ -19,7 +19,6 @@
             <a href="#" class="text-2xl font-bold text-blue-600">Portfolio</a>
             <nav class="hidden md:block">
                 <ul class="flex space-x-8">
-
                     <li><a href="#about"
                             class="tab-links text-gray-900 hover:text-blue-600 transition-colors duration-150">About</a>
                     </li>
@@ -46,10 +45,13 @@
         <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 px-6">
             <div class="text-center" data-aos="fade-up">
                 <h1 class="text-5xl md:text-6xl font-bold mb-6">
-                    Hi, I'm <span class="text-blue-600">Henry</span>
+                    <a href="" class="typewrite" data-period="2000"
+                        data-type='[ "Hi, Im Henry!", "Hola, soy Henry!", "Salut, je suis Henry!", "Hei, jeg er Henrik!" ]'>
+                        <span class="wrap"></span>
+                    </a>
                 </h1>
                 <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                    An aspiring developer specializing in creating beautiful, functional, and user-friendly websites and
+                    An aspiring developer specializing in creating clean, functional, user-friendly websites and
                     applications.
                 </p>
                 <div class="flex justify-center gap-4">
@@ -69,13 +71,13 @@
             <div class="container mx-auto max-w-4xl">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div data-aos="fade-right">
-                        <img src="images/henry-no-bg.png" alt="Profile image" width="300px"
+                        <img src="images/face.JPG" alt="Profile image" width="300px"
                             class="mx-auto rounded-lg shadow-lg">
                     </div>
                     <div data-aos="fade-left">
                         <h2 class="text-3xl font-bold mb-6">About Me</h2>
                         <p class="text-gray-600 mb-6">
-                            I am an enthusiastic aspiring full-stack developer with a strong foundation in web
+                            I am an enthusiastic aspiring developer with a strong foundation in web
                             development. I enjoy creating user-friendly interfaces and exploring modern technologies to
                             deliver impactful solutions. Passionate about continuous learning, I am eager to contribute
                             my skills to meaningful IT projects.
@@ -111,6 +113,17 @@
                         <i class="fa-brands fa-js text-5xl text-blue-600 mb-4"></i>
                         <h3 class="font-semibold text-gray-800">JavaScript</h3>
                         <span class="text-sm text-gray-500 mt-2">Frontend</span>
+                    </div>
+
+                    <div class="flex flex-col items-center p-8 bg-white shadow-md rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                        data-aos="fade-up" data-aos-delay="500">
+                        <svg class="h-12 w-12 text-blue-600 mb-4" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512" fill="currentColor">
+                            <path
+                                d="M429.5 236.3L291.7 374.1 429.5 512H272l-59.1-59.1-78.8-78.8L272 236.3H429.5zM272 0L16 256l78.8 78.8L429.5 0H272z" />
+                        </svg>
+                        <h3 class="font-semibold text-gray-800">Flutter</h3>
+                        <span class="text-sm text-gray-500 mt-2">Dart Framework</span>
                     </div>
 
                     <div class="flex flex-col items-center p-8 bg-white shadow-md rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
@@ -218,6 +231,24 @@
                         <span class="text-sm text-gray-500 mt-2">Code Editor</span>
                     </div>
                     <div class="flex flex-col items-center p-8 bg-gray-50 shadow-md rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div>
+                            <svg class="h-12 w-12 text-blue-600 mb-4" viewBox="-0.5 0 257 257"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" fill="currentColor"
+                                x="0px" y="0px" width="50" height="50">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M0 36.357L104.62 22.11l.045 100.914-104.57.595L0 36.358zm104.57 98.293l.08 101.002L.081 221.275l-.006-87.302 104.494.677zm12.682-114.405L255.968 0v121.74l-138.716 1.1V20.246zM256 135.6l-.033 121.191-138.716-19.578-.194-101.84L256 135.6z"
+                                        fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-800">Microsoft Applications</h3>
+                        <span class="text-sm text-gray-500 mt-2">Enterprise Software</span>
+                    </div>
+                    <div class="flex flex-col items-center p-8 bg-gray-50 shadow-md rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                         data-aos="fade-up" data-aos-delay="400">
                         <div>
                             <svg class="h-12 w-12 text-blue-600 mb-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -319,13 +350,50 @@
                 </div>
             </div>
         </section>-->
-        
+
         <!-- Projects Section -->
         <section id="projects" class="py-20 px-6 bg-gray-50">
             <div class="container mx-auto">
                 <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Project Card 1 -->
+
+                    <!-- Project Card -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/companion.png" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Caster Companion</h3>
+                            <p class="text-gray-600 mb-4">Developed the frontend of Caster Companion for MLBB using
+                                Vue.js, featuring match listings, real-time player stats, and visualized in-game data
+                                from the official MLBB API.
+                            </p>
+                            <div class="flex gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">HTML</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">CSS</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Vue</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/accounting.png" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Accounting Flutter</h3>
+                            <p class="text-gray-600 mb-4">Developed a Flutter Web-based accounting application with
+                                role-based access, dynamic reports, dashboards, and PDF exports by organizing
+                                unstructured API data into user-friendly formats.
+                            </p>
+                            <div class="flex gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Flutter</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">HTML</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card -->
                     <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
                         data-aos="fade-up">
                         <img src="images/gym.png" alt="Project 1" class="w-full h-48 object-cover">
@@ -342,7 +410,7 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 2 -->
+                    <!-- Project Card -->
                     <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
                         data-aos="fade-up" data-aos-delay="100">
                         <img src="images/chat.jpg" alt="Project 2" class="w-full h-48 object-cover">
@@ -360,13 +428,14 @@
                         </div>
                     </div>
 
-                    <!-- Project Card 3 -->
+
+                    <!-- Project Card -->
                     <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
                         data-aos="fade-up" data-aos-delay="200">
                         <img src="images/flowers.jpg" alt="Project 3" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2">CSS Flowers</h3>
-                            <p class="text-gray-600 mb-4">Stole someone else's code of flowers made from pure css as a
+                            <p class="text-gray-600 mb-4">Used someone else's code of flowers made from pure css as a
                                 valentine's gift and added my own kind of flair to it</p>
                             <div class="flex gap-2">
                                 <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">HTML</span>
@@ -374,7 +443,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Project Card 4 -->
+
+                    <!-- Project Card -->
                     <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
                         data-aos="fade-up" data-aos-delay="200">
                         <img src="images/cafe.jpg" alt="Project 3" class="w-full h-48 object-cover">
@@ -392,9 +462,6 @@
                 </div>
             </div>
         </section>
-
-
-
         <!-- Contact Section -->
         <section id="contact" class="py-20 px-6 bg-white">
             <div class="container mx-auto max-w-4xl">
@@ -428,7 +495,7 @@
                         <div class="space-y-4">
                             <p class="flex items-center gap-4">
                                 <i class="fas fa-envelope text-blue-600 items-center text-left"></i>
-                                <a href="mailto:j.henrymahusay@example.com"
+                                <a href="mailto:j.henrymahusay@gmail.com"
                                     class="text-gray-600 hover:text-blue-600">j.henrymahusay@example.com</a>
                             </p>
                             <p class="flex items-center gap-4">
@@ -472,6 +539,10 @@
         });
     </script>
     <script>
+        // Get the height of the navbar
+        const navbarHeight = document.querySelector('nav').offsetHeight;
+        document.getElementById('header').style.marginTop = navbarHeight + 'px';
+
         // used to switch between tabs
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -499,9 +570,7 @@
         }
     </script>
     <script>
-        // Get the height of the navbar
-        const navbarHeight = document.querySelector('nav').offsetHeight;
-        document.getElementById('header').style.marginTop = navbarHeight + 'px';
+
     </script>
     <script>
         //scroll script
@@ -535,6 +604,55 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
+    <script>var TxtType = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+        TxtType.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+            if (this.isDeleting) { delta /= 2; }
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #1f2937}";
+            document.body.appendChild(css);
+        };</script>
 </body>
 
 </html>
